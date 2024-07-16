@@ -1,0 +1,112 @@
+{
+"editor.wordWrap": "on",
+"editor.autoIndent": "keep",
+"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+"editor.codeLens": false,
+"editor.minimap.scale": 1,
+"workbench.view.alwaysShowHeaderActions": true,
+"terminal.integrated.copyOnSelection": true,
+"html.format.maxPreserveNewLines": 0,
+"html.format.wrapAttributesIndentSize": 0,
+"css.format.maxPreserveNewLines": 0,
+"css.format.preserveNewLines": false,
+"css.format.newlineBetweenSelectors": false,
+"css.lint.emptyRules": "ignore",
+"css.lint.duplicateProperties": "warning",
+"css.lint.hexColorLength": "warning",
+"less.format.maxPreserveNewLines": 0,
+"[html]": {
+"editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"prettier.bracketSameLine": true,
+"prettier.printWidth": 8888,
+"prettier.tabWidth": 0,
+// "workbench.tree.indent": 0,
+"workbench.tree.renderIndentGuides": "none",
+"editor.detectIndentation": false,
+"editor.insertSpaces": false,
+"editor.language.brackets": [],
+"[jsonc]": {
+"editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"editor.guides.highlightActiveIndentation": false,
+"typescript.format.indentSwitchCase": false,
+"css.lint.argumentsInColorFunction": "ignore",
+"prettier.htmlWhitespaceSensitivity": "ignore",
+"problems.showCurrentInStatus": true,
+"references.preferredLocation": "view",
+"css.format.newlineBetweenRules": false,
+"less.lint.argumentsInColorFunction": "warning",
+"html.format.extraLiners": "style, /head",
+"html.format.wrapAttributes": "preserve-aligned",
+"html.format.wrapLineLength": 0,
+"prettier.endOfLine": "auto",
+"prettier.proseWrap": "always",
+"explorer.confirmDragAndDrop": false,
+"explorer.confirmDelete": false,
+"git.autofetch": true,
+"git.enableSmartCommit": true,
+"git.confirmSync": false,
+"editor.multiCursorModifier": "ctrlCmd",
+"shellformat.useEditorConfig": true,
+"bashBeautify.tabSize": 1,
+
+    "actionButtons": {
+        "reloadButton": "♻️", /* Custom reload button text */
+        "defaultColor": "#ff0034", /* Can also use string color names */
+        "loadNpmCommands": true, /* Disables automatic generation of actions for npm commands */
+        "commands": [
+            {
+                "cwd": "", /* Terminal initial folder */
+                "name": "RUN BASH FILE ➡️",
+                "color": "green",
+                "singleInstance": true,
+                "command": "bash ${file}", /* This is executed in the terminal */
+            },
+            {
+                "name": "🪟 Split editor",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "workbench.action.splitEditor"
+            },
+            {
+                /* example for esp-idf oriented command */
+                "name": "Flash",
+                "terminalName": "ESP-IDF 4.4 CMD",
+                "color": "red",
+                "useVsCodeApi": false,
+                "ignoreCwd": true,
+                "ignoreClear": true,
+                "command": "idf.py -p ${port} flash",
+                "extraCommands": [
+                    "idf.py -p ${port} monitor"
+                ]
+            },
+			            {
+                "name": "Commands 👓 ",
+                "color": "white",
+                "command": "workbench.action.showCommands",
+            }
+        ],
+	},
+	"files.associations": {
+		"*.yrf": "json",
+		"*.rpx": "xml",
+		"*.stl": "json"
+	},
+	"newFolder.iconsType": "emoji",
+	"workbench.startupEditor": "none",
+	"editor.parameterHints.enabled": false,
+	"css.hover.references": false,
+	"less.hover.references": false,
+	"scss.hover.references": false,
+	"html.hover.references": false,
+	"git.ignoreRebaseWarning": true,
+	"workbench.editorAssociations": {
+		"*.jpg": "imagePreview.previewEditor",
+		"*.webp": "imagePreview.previewEditor"
+	},
+	"editor.minimap.size": "fit",
+	"editor.minimap.showSlider": "always",
+	"git.openRepositoryInParentFolders": "never"
+}
